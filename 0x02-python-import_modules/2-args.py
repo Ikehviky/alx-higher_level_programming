@@ -10,7 +10,7 @@ if __name__ == "__main__":
        in the command line
     """
     print("{} {}".format(x, y))\
-    if x == 1 else print("{} {}".format(x, y))\
-    if x == 0 else print("{} {}".format(x, y+"s:"))
+        if x == 1 else print("{} {}".format(x, y))\
+        if x == 0 else print("{} {}".format(x, y+"s:"))
     for i in range(x):
         print("{}: {}".format(i + 1, argv[i + 1]))
