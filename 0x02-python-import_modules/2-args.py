@@ -1,16 +1,13 @@
 #!/usr/bin/python3
 
-from sys import argv
-
-x = len(argv) - 1
-y = "argument"
-
 if __name__ == "__main__":
-    """prints the number of and the list of its arguments
-       in the command line
-    """
-    print("{} {}".format(x, y))\
-        if x == 1 else print("{} {}".format(x, y))\
-        if x == 0 else print("{} {}".format(x, y+"s:"))
-    for i in range(x):
-        print("{}: {}".format(i + 1, argv[i + 1]))
+
+    from sys import argv
+
+    x = len(argv) - 1
+    y = "argument"
+
+    print('{} {}'.format(x, y+":")) \
+        if x == 1 else print('{} {}'.format(x, y+'s.')) \
+        if x == 0 else print('{} {}'.format(x, y+'s:'))
+    [print('{}: {}'.format(z, argv[z])) for z in range(1, x + 1)]
