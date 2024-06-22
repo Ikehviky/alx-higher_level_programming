@@ -1,0 +1,2 @@
+
+<!-- Javascript object scope closure -->
